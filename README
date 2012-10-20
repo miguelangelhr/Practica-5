@@ -1,0 +1,20 @@
+ -------------------------------------------------
+|     LENGUAJES Y PARADIGMAS DE PROGRAMACIÓN      |
+|     PRACTICA Nº 5                               |
+ -------------------------------------------------
+|     PROFESORA: Coromoto Antonia Leon Hernandez  |
+|     ALUMNO: Miguel Ángel Hernández Rodríguez    |
+ -------------------------------------------------
+
+ DESCRIPCIÓN: Implementación de un programa para jugar al Piedra, Papel o Tijera Orientado
+ a Objetos con la creación de una clase llamada PiedraPapelTijera.
+
+ Existen 3 tipos de Test:
+	test_jugar
+	test_erroneo
+	test_variado
+
+ Existen 2 tipos de rake:
+	rake t[test_name] # 
+	rake test	# run test/tc_rps.rb
+	rake tijeras # Run bin/ppt_main.rb tijeras
