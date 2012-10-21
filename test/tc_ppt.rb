@@ -15,7 +15,7 @@ class TestPiedraPapelTijera < Test::Unit::TestCase
 
 	def test_jugar()
 
-		@ppt_obj.obtener_jugador('piedra')
+		@ppt_obj.jugada_humano('piedra')
 		marcador = []
 
 		30.times do
@@ -28,20 +28,20 @@ class TestPiedraPapelTijera < Test::Unit::TestCase
 
 	def test_variado()
 
-		@ppt_obj = obtener_jugador(@ppt_obj.tiradas.sample.to_s)
+		@ppt_obj.jugada_humano(@ppt_obj.tiradas.sample.to_s)
 		respuestas = []
 
 		30.times do
 			respuestas.push(@ppt_obj.jugar())
 		end
 
-		assert(respuestas.uniq.legth >= 3, "---> No se han obtenido los 3 tipos de respuestas esperados")
+		assert(respuestas.uniq.length >= 3, "---> No se han obtenido los 3 tipos de respuestas esperados")
 
 	end
 
 	def test_erroneo()
 
-		assert(TypeError) {@ppt_obj.obtener_humano("caja")}
+		assert(TypeError) {@ppt_obj.jugada_humano("caja")}
 
 	end
 
