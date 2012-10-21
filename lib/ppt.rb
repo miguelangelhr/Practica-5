@@ -11,12 +11,13 @@ class PiedraPapelTijera
 	attr_accessor :tiradas, :ganadoras, :resultados
 	attr_reader :jugador, :maquina, :resultado
 
-	def initialize (tiradas, ganadoras, resultados, jugador, maquina)
+	def initialize (jugador)
 
-		@tiradas = tiradas
-		@ganadoras = ganadoras
+		@tiradas = [:piedra, :papel, :tijera]
+		@ganadoras = {tiradas[0] => tiradas[2], tiradas[1] => tiradas[0], tiradas[2] => tiradas[1]}
+		@resultados = [:gana, :pierde, :empate]
 		@jugador = jugador.to_sym
-		@maquina = maquina.to_sym
+		@maquina = ""
 		@resultados = resultados
 
 	end
@@ -42,15 +43,15 @@ class PiedraPapelTijera
 
 			@resultado = @resultados[2]
 
-		# Si la jugada del jugador gana a la maquina, el jugador gana
+		# Si la jugada del jugador pierde con la maquina, el jugador gana
 		elsif (@jugador == @ganadoras[@maquina])
 
-			@resultado = @resultados[0]
+			@resultado = @resultados[1]
 
-		# Si la jugada del jugador pierde con la maquina, el jugador pierde
+		# Si la jugada del jugador gana a la maquina, el jugador pierde
 		else
 
-			@resultado = @resultados[1]
+			@resultado = @resultados[0]
 
 		end
 

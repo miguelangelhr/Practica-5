@@ -11,10 +11,10 @@
 
  Existen 3 tipos de Test:
 	test_jugar
-	test_erroneo
 	test_variado
+	test_erroneo
 
- Existen 2 tipos de rake:
-	rake t[test_name] # 
-	rake test	# run test/tc_rps.rb
-	rake tijeras # Run bin/ppt_main.rb tijeras
+ Existen 3 tipos de rake:
+	rake t[test_name] # Ejecuta el test pasado por parametro 
+	rake test	  # Ejecuta el banco de pruebas test/tc_rps.rb
+	rake tijeras      # Ejecuta bin/ppt_main.rb tijeras
