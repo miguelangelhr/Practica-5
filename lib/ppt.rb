@@ -1,7 +1,7 @@
 # -------------------------------------------
 #|  Autor: Miguel Ángel Hernández Rodríguez  |
 #|  Clase: PiedraPapelTijera                 |
-#|  Fecha Finalización: 19/10/2012           |
+#|  Fecha Finalización: 21/10/2012           |
 # -------------------------------------------
 
 # encoding: UTF-8

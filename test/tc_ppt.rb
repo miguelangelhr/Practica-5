@@ -1,5 +1,5 @@
 # -------------------------------------------
-#|  Autor: Miguel Angel Hernandez Rodriguez  |
+#|  Autor: Miguel Ángel Hernández Rodríguez  |
 #|  Clase: PiedraPapelTijera                 |
 #|  Fecha Finalizacion: 21/10/2012           |
 # -------------------------------------------

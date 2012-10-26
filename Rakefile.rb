@@ -6,9 +6,9 @@ task :test do
 end
 
 desc "Ejecuta ppt.rb con un test especifico"
-task :t, :test_name do [t, args]
-	test_name = args[:test_name] || "test_jugar"
-	sh "ruby -w -Ilib test/tc_ppt.rb --name #{test_name}"
+task :t, :test_name do |t, args|
+     test_name = args[:test_name] || "test_jugar"
+     sh "ruby -w -Ilib test/tc_ppt.rb --name #{test_name}"
 end
 
 desc "Ejecuta el programa principal"
